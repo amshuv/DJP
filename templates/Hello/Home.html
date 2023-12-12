@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HomeApp</title>
+    <link rel="stylesheet" href="{% static 'css/style.css'%}">
+</head>
+<body>
+<h1>App Home page being rendered from templates folder</h1>
+<h3>Balaji</h3>
+<form>
+    Enter your full name<input type="text">
+</form>
+<input type="button" name="Click Me">
+<h3>My level of thinking is at {{insert_me}}</h3>
+<h4> We can look at ourselves as a spike or someone made out of {{sr}} and very special</h4>
+<img src="{% static 'images/hannie.jpg'%}" alt="No image found">
+<h4> did you know there are {{n}} billion stars in our milkyway galaxy and there are billion of such galaxies</h4>
+<form method="post">
+    {{form.as_p}}
+    {% csrf_token %}
+    <input type="submit" value="Submit">
+</form>
+
+</body>
+</html>

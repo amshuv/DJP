@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Report</title>
+</head>
+<body>
+<h1>Report Page</h1>
+<div class="main">
+
+    {% for data in dataset %}
+    student_ID: {{ data.student_ID }}<br/>
+    student_name: {{ data.student_name }}<br/>
+    course: {{ data.course }}<br/>
+    jdate: {{ data.jdate }}<br/>
+    <hr/>
+    {% endfor %}
+</div>
+</body>
+</html>
